@@ -10,6 +10,7 @@ public class SocketServer {
         while (true) {
             System.out.println("等待连接。。");
             //阻塞方法
+            // cmd-->telnet localhost 9000 ---->ctrl+] 键输入
             Socket clientSocket = serverSocket.accept();
             System.out.println("有客户端连接了。。");
             new Thread(new Runnable() {
